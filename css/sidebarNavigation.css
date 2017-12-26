@@ -1,0 +1,42 @@
+body{
+  position: relative;
+}
+.overlay{
+  position: fixed;
+  top: 0px;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  margin: auto;
+  background-color:rgba(0,0,0,0.5);
+  z-index:998;
+  transition: all ease 0.2s;
+}
+.overlay.open{
+  left:0;
+  right:0;
+}
+.sidebarNavigation{
+  margin-bottom: 0;
+  z-index:999;
+}
+.sideMenu{
+  position: fixed;
+  left: -100%;
+  top: 52px;
+  bottom: 0;
+  transition: all ease 0.5s;
+  overflow: hidden;
+  width:100%;
+  z-index:999;
+  max-width: 50%;
+  margin-bottom: 0px;
+}
+.sideMenu.open{
+  left:0px;
+  display: block;
+  overflow-y: scroll;
+}
+.sideMenu ul{
+  margin: 0px;
+}
