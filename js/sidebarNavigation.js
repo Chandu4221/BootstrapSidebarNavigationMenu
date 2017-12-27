@@ -16,8 +16,8 @@ $(".sidebarNavigation").ready(function(){
     $("body").append("<div class='overlay'></div>");
 });
 $(".navbar-toggle").on("click",function(){
-  var classes = $(".sidebarNavigation").attr("class");
-  $(".sideMenu").addClass(classes).removeClass("navbar sidebarNavigation");
+  var classes = $(".sidebarNavigation").attr("data-sidebarClass");
+  $(".sideMenu").addClass(classes);
   $(".sideMenu, .overlay").toggleClass("open");
   $(".overlay").on("click",function(){
     $(this).removeClass("open");

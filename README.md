@@ -23,8 +23,21 @@ And JS
 ```
 and add class to <nav> tag "sidebarNavigation"
 ```
-<nav class="navbar navbar-inverse sidebarNavigation">
+<nav class="navbar navbar-inverse sidebarNavigation" data-sidebarClass="navbar-inverse">
 ```
+To add Extra Classes to Sidebar Menu at it using "data-sidebarClass"
+```
+<nav class="navbar navbar-inverse sidebarNavigation" data-sidebarClass="class_one class_two">
+```
+
+Add ".left-navbar-toggle" to ".navbar-toggle" to place the toggle button on left
+
+```
+<button type="button" class="navbar-toggle left-navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+......
+</button>
+```
+
 ## Built With
 
 * [Bootstrap v 3.3.7](https://getbootstrap.com/docs/3.3/) - Bootstrap CSS Framework
